@@ -14,7 +14,8 @@
         }
     },
     "ignoreChanges": [
-        "**/*.md"
+        "**/*.md",
+        "**/package.json"
     ],
     "changelog": {
         "labels": {
