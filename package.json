@@ -4,7 +4,7 @@
     ],
     "private": true,
     "scripts": {
-        "commit": "git-cz"
+        "commit": "git add . && git-cz"
     },
     "config": {
         "commitizen": {
@@ -20,8 +20,7 @@
     "lint-staged": {
         "./packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
             "prettier --write",
-            "eslint --fix",
-            "git add"
+            "eslint --fix"
         ]
     },
     "devDependencies": {
