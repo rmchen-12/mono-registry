@@ -18,13 +18,13 @@ lerna bootstrap Installs all of their dependencies and links any cross-dependenc
 lerna create @aclink/hooks
 
 lerna publish 操作做了什么
-
-- 运行lerna updated来决定哪一个包需要被 publish
-- 如果有必要，将会更新lerna.json中的version
-- 将所有更新过的的包中的package.json的version字段更新
-- 将所有更新过的包中的依赖更新
-- 为新版本创建一个git commit或tag
-- 将包publish到npm上
+-   找出从上一个版本发布以来有过变更的 package
+-   提示开发者确定要发布的版本号
+-   将所有更新过的的 package 中的 package.json 的 version 字段更新
+-   将依赖更新过的 package 的 包中的依赖版本号更新
+-   更新 lerna.json 中的 version 字段
+-   提交上述修改，并打一个 tag
+-   推送到 git 仓
 
 lerna add chalk // 为所有 package 增加 chalk 模块
 lerna add semver --scope @mo-demo/cli-shared-utils // 为 @mo-demo/cli-shared-utils 增加 semver 模块
