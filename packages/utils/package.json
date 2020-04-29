@@ -55,17 +55,5 @@
             "ie>8",
             "Safari >= 6"
         ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-            "prettier --write",
-            "npm run lint",
-            "git add"
-        ]
     }
 }
