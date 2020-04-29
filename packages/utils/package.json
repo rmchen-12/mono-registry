@@ -1,6 +1,6 @@
 {
     "name": "@aclink/test",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "智能硬件组测试npm",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
