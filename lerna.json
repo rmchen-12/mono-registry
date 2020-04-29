@@ -13,8 +13,10 @@
             "conventionalCommits": true
         }
     },
+    "ignoreChanges": [
+        "**/*.md"
+    ],
     "changelog": {
-        "repo": "facebook/create-react-app",
         "labels": {
             "tag: new feature": ":rocket: New Feature",
             "tag: breaking change": ":boom: Breaking Change",
@@ -23,7 +25,6 @@
             "tag: documentation": ":memo: Documentation",
             "tag: internal": ":house: Internal",
             "tag: underlying tools": ":hammer: Underlying Tools"
-        },
-        "cacheDir": ".changelog"
+        }
     }
 }
