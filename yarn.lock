@@ -4444,11 +4444,6 @@ add-dom-event-listener@^1.1.0:
   dependencies:
     object-assign "4.x"
 
-add-stream@^1.0.0:
-  version "1.0.0"
-  resolved "http://10.1.10.34:4873/add-stream/-/add-stream-1.0.0.tgz#6a7990437ca736d5e1288db92bd3266d5f5cb2aa"
-  integrity sha1-anmQQ3ynNtXhKI25K9MmbV9csqo=
-
 address@1.0.3:
   version "1.0.3"
   resolved "http://10.1.10.34:4873/address/-/address-1.0.3.tgz#b5f50631f8d6cec8bd20c963963afb55e06cbce9"
@@ -7225,37 +7220,12 @@ conventional-changelog-angular@^1.3.3:
     compare-func "^1.3.1"
     q "^1.5.1"
 
-conventional-changelog-angular@^5.0.0, conventional-changelog-angular@^5.0.3, conventional-changelog-angular@^5.0.6:
+conventional-changelog-angular@^5.0.0, conventional-changelog-angular@^5.0.3:
   version "5.0.6"
   resolved "http://10.1.10.34:4873/conventional-changelog-angular/-/conventional-changelog-angular-5.0.6.tgz#269540c624553aded809c29a3508fdc2b544c059"
   integrity sha1-JpVAxiRVOt7YCcKaNQj9wrVEwFk=
   dependencies:
     compare-func "^1.3.1"
-    q "^1.5.1"
-
-conventional-changelog-atom@^2.0.3:
-  version "2.0.3"
-  resolved "http://10.1.10.34:4873/conventional-changelog-atom/-/conventional-changelog-atom-2.0.3.tgz#3bd14280aa09fe3ec49a0e8fe97b5002db02aad4"
-  integrity sha1-O9FCgKoJ/j7Emg6P6XtQAtsCqtQ=
-  dependencies:
-    q "^1.5.1"
-
-conventional-changelog-cli@^2.0.31:
-  version "2.0.31"
-  resolved "http://10.1.10.34:4873/conventional-changelog-cli/-/conventional-changelog-cli-2.0.31.tgz#3345581170fbb540416946e460fef519a64aef43"
-  integrity sha1-M0VYEXD7tUBBaUbkYP71GaZK70M=
-  dependencies:
-    add-stream "^1.0.0"
-    conventional-changelog "^3.1.18"
-    lodash "^4.17.15"
-    meow "^5.0.0"
-    tempfile "^3.0.0"
-
-conventional-changelog-codemirror@^2.0.3:
-  version "2.0.3"
-  resolved "http://10.1.10.34:4873/conventional-changelog-codemirror/-/conventional-changelog-codemirror-2.0.3.tgz#ebc088154684f8f5171446b8d546ba6b460d46f2"
-  integrity sha1-68CIFUaE+PUXFEa41Ua6a0YNRvI=
-  dependencies:
     q "^1.5.1"
 
 conventional-changelog-conventionalcommits@4.2.1:
@@ -7265,15 +7235,6 @@ conventional-changelog-conventionalcommits@4.2.1:
   dependencies:
     compare-func "^1.3.1"
     lodash "^4.2.1"
-    q "^1.5.1"
-
-conventional-changelog-conventionalcommits@^4.2.3:
-  version "4.2.3"
-  resolved "http://10.1.10.34:4873/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-4.2.3.tgz#22855b32d57d0328951c1c2dc01b172a5f24ea37"
-  integrity sha1-IoVbMtV9AyiVHBwtwBsXKl8k6jc=
-  dependencies:
-    compare-func "^1.3.1"
-    lodash "^4.17.15"
     q "^1.5.1"
 
 conventional-changelog-core@^3.1.6:
@@ -7295,68 +7256,12 @@ conventional-changelog-core@^3.1.6:
     read-pkg-up "^3.0.0"
     through2 "^3.0.0"
 
-conventional-changelog-core@^4.1.4:
-  version "4.1.4"
-  resolved "http://10.1.10.34:4873/conventional-changelog-core/-/conventional-changelog-core-4.1.4.tgz#39be27fca6ef20a0f998d7a3a1e97cfa8a055cb6"
-  integrity sha1-Ob4n/KbvIKD5mNejoel8+ooFXLY=
-  dependencies:
-    add-stream "^1.0.0"
-    conventional-changelog-writer "^4.0.11"
-    conventional-commits-parser "^3.0.8"
-    dateformat "^3.0.0"
-    get-pkg-repo "^1.0.0"
-    git-raw-commits "2.0.0"
-    git-remote-origin-url "^2.0.0"
-    git-semver-tags "^3.0.1"
-    lodash "^4.17.15"
-    normalize-package-data "^2.3.5"
-    q "^1.5.1"
-    read-pkg "^3.0.0"
-    read-pkg-up "^3.0.0"
-    through2 "^3.0.0"
-
-conventional-changelog-ember@^2.0.4:
-  version "2.0.4"
-  resolved "http://10.1.10.34:4873/conventional-changelog-ember/-/conventional-changelog-ember-2.0.4.tgz#c29b78e4af7825cbecb6c3fd6086ca5c09471ac1"
-  integrity sha1-wpt45K94JcvstsP9YIbKXAlHGsE=
-  dependencies:
-    q "^1.5.1"
-
-conventional-changelog-eslint@^3.0.4:
-  version "3.0.4"
-  resolved "http://10.1.10.34:4873/conventional-changelog-eslint/-/conventional-changelog-eslint-3.0.4.tgz#8f4736a23e0cd97e890e76fccc287db2f205f2ff"
-  integrity sha1-j0c2oj4M2X6JDnb8zCh9svIF8v8=
-  dependencies:
-    q "^1.5.1"
-
-conventional-changelog-express@^2.0.1:
-  version "2.0.1"
-  resolved "http://10.1.10.34:4873/conventional-changelog-express/-/conventional-changelog-express-2.0.1.tgz#fea2231d99a5381b4e6badb0c1c40a41fcacb755"
-  integrity sha1-/qIjHZmlOBtOa62wwcQKQfyst1U=
-  dependencies:
-    q "^1.5.1"
-
-conventional-changelog-jquery@^3.0.6:
-  version "3.0.6"
-  resolved "http://10.1.10.34:4873/conventional-changelog-jquery/-/conventional-changelog-jquery-3.0.6.tgz#460236ad8fb1d29ff932a14fe4e3a45379b63c5e"
-  integrity sha1-RgI2rY+x0p/5MqFP5OOkU3m2PF4=
-  dependencies:
-    q "^1.5.1"
-
-conventional-changelog-jshint@^2.0.3:
-  version "2.0.3"
-  resolved "http://10.1.10.34:4873/conventional-changelog-jshint/-/conventional-changelog-jshint-2.0.3.tgz#ef6e2caf2ee6ffdfda78fcdf7ce87cf6c512d728"
-  integrity sha1-724sry7m/9/aePzffOh89sUS1yg=
-  dependencies:
-    compare-func "^1.3.1"
-    q "^1.5.1"
-
-conventional-changelog-preset-loader@^2.1.1, conventional-changelog-preset-loader@^2.3.0:
+conventional-changelog-preset-loader@^2.1.1:
   version "2.3.0"
   resolved "http://10.1.10.34:4873/conventional-changelog-preset-loader/-/conventional-changelog-preset-loader-2.3.0.tgz#580fa8ab02cef22c24294d25e52d7ccd247a9a6a"
   integrity sha1-WA+oqwLO8iwkKU0l5S18zSR6mmo=
 
-conventional-changelog-writer@^4.0.11, conventional-changelog-writer@^4.0.6:
+conventional-changelog-writer@^4.0.6:
   version "4.0.11"
   resolved "http://10.1.10.34:4873/conventional-changelog-writer/-/conventional-changelog-writer-4.0.11.tgz#9f56d2122d20c96eb48baae0bf1deffaed1edba4"
   integrity sha1-n1bSEi0gyW60i6rgvx3v+u0e26Q=
@@ -7372,23 +7277,6 @@ conventional-changelog-writer@^4.0.11, conventional-changelog-writer@^4.0.6:
     split "^1.0.0"
     through2 "^3.0.0"
 
-conventional-changelog@^3.1.18:
-  version "3.1.18"
-  resolved "http://10.1.10.34:4873/conventional-changelog/-/conventional-changelog-3.1.18.tgz#7da0a5ab34a604b920b8bf71c6cf5d952f0e805e"
-  integrity sha1-faClqzSmBLkguL9xxs9dlS8OgF4=
-  dependencies:
-    conventional-changelog-angular "^5.0.6"
-    conventional-changelog-atom "^2.0.3"
-    conventional-changelog-codemirror "^2.0.3"
-    conventional-changelog-conventionalcommits "^4.2.3"
-    conventional-changelog-core "^4.1.4"
-    conventional-changelog-ember "^2.0.4"
-    conventional-changelog-eslint "^3.0.4"
-    conventional-changelog-express "^2.0.1"
-    conventional-changelog-jquery "^3.0.6"
-    conventional-changelog-jshint "^2.0.3"
-    conventional-changelog-preset-loader "^2.3.0"
-
 conventional-commit-types@^2.0.0:
   version "2.3.0"
   resolved "http://10.1.10.34:4873/conventional-commit-types/-/conventional-commit-types-2.3.0.tgz#bc3c8ebba0a9e4b3ecc548f1d0674e251ab8be22"
@@ -7402,7 +7290,7 @@ conventional-commits-filter@^2.0.0, conventional-commits-filter@^2.0.2:
     lodash.ismatch "^4.4.0"
     modify-values "^1.0.0"
 
-conventional-commits-parser@^3.0.0, conventional-commits-parser@^3.0.3, conventional-commits-parser@^3.0.7, conventional-commits-parser@^3.0.8:
+conventional-commits-parser@^3.0.0, conventional-commits-parser@^3.0.3, conventional-commits-parser@^3.0.7:
   version "3.0.8"
   resolved "http://10.1.10.34:4873/conventional-commits-parser/-/conventional-commits-parser-3.0.8.tgz#23310a9bda6c93c874224375e72b09fb275fe710"
   integrity sha1-IzEKm9psk8h0IkN15ysJ+ydf5xA=
@@ -10955,14 +10843,6 @@ git-semver-tags@^2.0.3:
   integrity sha1-SJiKcYrPWTgA+ZYiqVKnfEBb+jQ=
   dependencies:
     meow "^4.0.0"
-    semver "^6.0.0"
-
-git-semver-tags@^3.0.1:
-  version "3.0.1"
-  resolved "http://10.1.10.34:4873/git-semver-tags/-/git-semver-tags-3.0.1.tgz#9cb9e4974437de1f71f32da3bfe74f4d35afb1b9"
-  integrity sha1-nLnkl0Q33h9x8y2jv+dPTTWvsbk=
-  dependencies:
-    meow "^5.0.0"
     semver "^6.0.0"
 
 git-up@^4.0.0:
@@ -21191,7 +21071,7 @@ telejson@^3.2.0:
     lodash "^4.17.15"
     memoizerific "^1.11.3"
 
-temp-dir@2.0.0, temp-dir@^2.0.0:
+temp-dir@2.0.0:
   version "2.0.0"
   resolved "http://10.1.10.34:4873/temp-dir/-/temp-dir-2.0.0.tgz#bde92b05bdfeb1516e804c9c00ad45177f31321e"
   integrity sha1-vekrBb3+sVFugEycAK1FF38xMh4=
@@ -21227,14 +21107,6 @@ temp@^0.8.1:
   integrity sha1-jJejOkdwBy4KBfkZOWx2ZafdWfI=
   dependencies:
     rimraf "~2.6.2"
-
-tempfile@^3.0.0:
-  version "3.0.0"
-  resolved "http://10.1.10.34:4873/tempfile/-/tempfile-3.0.0.tgz#5376a3492de7c54150d0cc0612c3f00e2cdaf76c"
-  integrity sha1-U3ajSS3nxUFQ0MwGEsPwDiza92w=
-  dependencies:
-    temp-dir "^2.0.0"
-    uuid "^3.3.2"
 
 term-size@^1.2.0:
   version "1.2.0"

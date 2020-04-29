@@ -35,7 +35,7 @@
         "@types/base64-js": "^1.2.5",
         "@types/crypto-js": "^3.1.45",
         "cross-env": "^7.0.2",
-        "rimraf": "^3.0.2",
+        "rimraf": "3.0.2",
         "rollup-plugin-filesize": "^7.0.0"
     },
     "dependencies": {
