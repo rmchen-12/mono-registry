@@ -4,7 +4,8 @@
     ],
     "private": true,
     "scripts": {
-        "commit": "git add . && git-cz"
+        "commit": "git add . && git-cz",
+        "lint": "eslint src --fix --ext .ts,.tsx"
     },
     "config": {
         "commitizen": {
@@ -18,9 +19,9 @@
         }
     },
     "lint-staged": {
-        "./packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+        "./packages/**/*.{js,jsx,ts,tsx,json,css,less,md}": [
             "prettier --write",
-            "eslint --fix"
+            "npm run lint"
         ]
     },
     "devDependencies": {
