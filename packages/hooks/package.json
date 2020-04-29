@@ -32,5 +32,9 @@
     },
     "bugs": {
         "url": "https://github.com/rmchen-12/mono-registry/issues"
+    },
+    "gitHead": "32ead97f9a0fe5ae6d1ee77f477d801fe3339d6d",
+    "devDependencies": {
+        "rimraf": "^3.0.2"
     }
 }

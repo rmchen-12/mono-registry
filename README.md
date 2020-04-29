@@ -35,5 +35,13 @@ yarn workspaces run clean # 执行所有 package 的 clean 操作
 
 ### 提交规范
 
-使用`commitlint`对提交进行审核，不符合将无法提交
-推荐使用 `yarn run commit` 提交，走完完整的提交流程
+### 安装|删除依赖 使用yarn workspace
+- 普通项目： 通过yarn add和yarn remove即可简单姐解决依赖库的安装和删除问题
+- monorepo: 一般分为三种场景
+  -  给某个package安装依赖：yarn workspace packageB add packageA 将packageA作为packageB的依赖进行安装
+  -  给所有的package安装依赖: 使用yarn workspaces add lodash 给所有的package安装依赖
+  -  给root 安装依赖：一般的公用的开发工具都是安装在root里，如typescript,我们使用yarn add -W -D typescript来给root安装依赖
+     - yarn workspace packageB remove packageA
+     - yarn workspaces remove lodash
+     - yarn remove -W -D typescript
+
