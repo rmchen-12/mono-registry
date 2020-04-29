@@ -22,5 +22,6 @@ yarn workspaces run clean # 执行所有 package 的 clean 操作
 
 ### 提交规范
 
+a
 使用`commitlint`对提交进行审核，不符合将无法提交
 推荐使用 `yarn run commit` 提交，走完完整的提交流程
