@@ -1,3 +1,23 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [1.2.1](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/compare/@aclink/test@1.2.0...@aclink/test@1.2.1) (2020-04-29)
+
+
+### Bug Fixes
+
+* asdf ([cdfe0cb](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/commits/cdfe0cb2222dd40a81baea7999d800348b37c42f))
+
+
+
+# 1.2.0 (2020-04-29)
+
+
+
+
+
 # 1.2.0 (2020-04-29)
 
 ### Bug Fixes
