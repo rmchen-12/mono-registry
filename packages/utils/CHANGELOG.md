@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/compare/@aclink/test@1.2.1...@aclink/test@1.3.0) (2020-04-30)
+
+
+### Features
+
+* 增加js测试 ([4bc9f6c](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/commits/4bc9f6c431140b21db029c2c27505e1e1b0fdccc))
+
+
+
+
+
 ## [1.2.1](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/compare/@aclink/test@1.2.0...@aclink/test@1.2.1) (2020-04-29)
 
 
