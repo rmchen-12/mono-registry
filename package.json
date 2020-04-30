@@ -4,9 +4,9 @@
     ],
     "private": true,
     "scripts": {
-        "c": "git add . && git-cz",
-        "p": " lerna publish --no-commit-hooks",
-        "lint": "eslint packages --fix --ext .ts,.tsx"
+        "c": "git-cz",
+        "p": "lerna publish --no-commit-hooks",
+        "lint": "eslint packages --fix --ext .ts,.tsx,.js,.jsx"
     },
     "config": {
         "commitizen": {

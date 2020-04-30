@@ -1,7 +1,4 @@
 {
-    "packages": [
-        "packages/*"
-    ],
     "npmClient": "yarn",
     "useWorkspaces": true,
     "version": "independent",
@@ -13,10 +10,7 @@
             "conventionalCommits": true
         }
     },
-    "ignoreChanges": [
-        "**/*.md",
-        "**/*.json"
-    ],
+    "ignoreChanges": ["**/*.md"],
     "changelog": {
         "labels": {
             "tag: new feature": ":rocket: New Feature",
