@@ -3,9 +3,6 @@
     "useWorkspaces": true,
     "version": "independent",
     "command": {
-        "bootstrap": {
-            "hoist": true
-        },
         "version": {
             "conventionalCommits": true
         }

@@ -1,3 +1,9 @@
+### 为什么要做这套脚手架
+
+-   自己配了一套 rollup 来打包工具库结果引用出错，线上严重 bug
+-   智能硬件组内维护了多个 package，散落四处，维护繁琐
+-   发版后到底更新了啥，还要手动改 version，version 应该改哪个数字
+
 ### TODO
 
 -   [ ] 使用 jest，增加代码测试
@@ -40,7 +46,7 @@
     -   yarn workspaces remove lodash
     -   yarn remove -W -D typescript
 
-1. 开发完成，git 提交，npm 发版
+3. 开发完成，git 提交，npm 发版
     > 注意： 这里通过 vscode 提交工具会报错，因为这种方式很难规范提交信息，请通过命令方式提交
 
 -   git 提交 `yarn run c` ，npm 发版依赖 git 提交信息，根据提交来自动生成 CHANGLOG，提交规范及其重要，更方便以后追溯信息
@@ -64,4 +70,5 @@
 ### 参考文章
 
 [React + Typescript 工程化治理实践](https://juejin.im/post/5dccc9b8e51d4510840165e2#heading-16)
-[umi ](https://github.com/umijs/father/tree/2.x)
+[lerna+yarn workspace+monorepo 项目的最佳实践](https://juejin.im/post/5d583231e51d45620541039e#heading-9)
+[father 文档，基于 rollup,babel,docz,支持 ts,eslint,prettier 等](https://github.com/umijs/father/tree/2.x)
