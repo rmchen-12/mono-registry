@@ -16,6 +16,7 @@
 
 -   [x] 增加 types，支持 typescript 提示
 -   [x] typescript 直接重构，并引入完整工具链重构代码结构
+-   [ ] 集成 TSDoc，自动生成 api 文档
 -   [ ] 使用 jest，增加代码测试
 
 ### 发包流程为
