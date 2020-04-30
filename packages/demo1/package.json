@@ -1,0 +1,29 @@
+{
+    "name": "@aclink/demo1",
+    "version": "1.0.0",
+    "description": "> TODO: description",
+    "author": "ruiminChen <ruimin.chen@zuolin.com>",
+    "homepage": "https://github.com/rmchen-12/mono-registry#readme",
+    "license": "ISC",
+    "main": "lib/demo1.js",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib"
+    ],
+    "publishConfig": {
+        "registry": "http://10.1.10.34:4873/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rmchen-12/mono-registry.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/rmchen-12/mono-registry/issues"
+    }
+}

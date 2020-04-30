@@ -1,12 +1,12 @@
 ### TODO
 
 -   [ ] 使用 jest，增加代码测试
--   [ ] 自定义一些模板 package，一键生成符合最佳实践的 npm 仓库，通过`lerna create @aclink/new` 建立的 package 仓库有点简陋，自定义一些模板
+-   [ ] 自定义一些模板 package，一键生成符合最佳实践的 npm 仓库，因为通过`lerna create @aclink/new` 建立的 package 仓库有点简陋
 
 ### 多 npm 仓库用到的工具
 
--   `lerna` 多 npm 包的管理工具，解决调试，包和包之间依赖关系，依赖包冗余，发布需要手动修改版本，发版不会自动生成 CHANGELOG 等问题
--   `yarn` yarn 具有 workspace 功能，用于解决各个 package 到处重复安装依赖包的问题，以及 package 与 package 之间相互依赖的问题
+-   `lerna` 多 npm 包的版本管理与发布工具，解决调试，包和包之间依赖关系，依赖包冗余，发布需要手动修改版本，发版不会自动生成 CHANGELOG 等问题
+-   `yarn` yarn 具有 workspace 特性，用于解决各个 package 到处重复安装依赖包的问题，以及 package 与 package 之间相互依赖的问题
 -   `husky` 获取到 git 操作钩子，以执行一些操作（eslint、提交规范...）,通过 git 钩子，我们可以做到更多自动化操作来保证流程的规范
 -   提交规范，根据提交来自动生成 CHANGELOG
     -   `commitizen` 规范提交，通过命令行形式完善提交信息
@@ -33,13 +33,14 @@
     -   对所有的 packages 进行依赖管理，分为三种场景
         -   给某个 package 安装依赖 `yarn workspace @aclink/utils add lodash` ，给 @aclink/utils 安装 lodash
         -   给所有的 package 安装依赖 `yarn workspaces add lodash`
-        -   给 root 安装共享依赖：一般的公用的开发工具都是安装在 root 里，所有 package 共享依赖，如 typescript,我们使用 `yarn add -W -D typescript` 来给 root 安装依赖
+        -   增加内部模块之间的依赖 `lerna add @aclink/utils --scope @aclink/rcm` ，给 @aclink/rcm 添加 @aclink/utils 依赖
+        -   给 root 安装共享依赖 `yarn add -W -D typescript` 一般的公用的开发工具都是安装在 root 里，所有 package 共享依赖，如 typescript,我们使用 `yarn add -W -D typescript` 来给 root 安装依赖
 -   对应的卸载依赖
     -   yarn workspace packageB remove packageA
     -   yarn workspaces remove lodash
     -   yarn remove -W -D typescript
 
-3. 开发完成，git 提交，npm 发版
+1. 开发完成，git 提交，npm 发版
     > 注意： 这里通过 vscode 提交工具会报错，因为这种方式很难规范提交信息，请通过命令方式提交
 
 -   git 提交 `yarn run c` ，npm 发版依赖 git 提交信息，根据提交来自动生成 CHANGLOG，提交规范及其重要，更方便以后追溯信息
@@ -59,3 +60,8 @@
 ### lerna 的一些操作命令
 
 -   `lerna clean` 清理所有的 node_modules，等同于`yarn workspaces run clean`
+
+### 参考文章
+
+[React + Typescript 工程化治理实践](https://juejin.im/post/5dccc9b8e51d4510840165e2#heading-16)
+[umi ](https://github.com/umijs/father/tree/2.x)

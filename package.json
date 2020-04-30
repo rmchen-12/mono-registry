@@ -1,8 +1,8 @@
 {
+    "private": true,
     "workspaces": [
         "packages/*"
     ],
-    "private": true,
     "scripts": {
         "c": "git-cz",
         "p": "lerna publish --no-commit-hooks",
