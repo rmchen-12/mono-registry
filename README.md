@@ -2,7 +2,8 @@
 
 -   自己配了一套 rollup 来打包工具库结果引用出错，线上严重 bug
 -   智能硬件组内维护了多个 package，散落四处，维护繁琐
--   发版后到底更新了啥，还要手动改 version，version 应该改哪个数字
+-   发版后到底更新了啥，还要手动改 version，version 应该改哪个数字，CHANGELOG 维护
+-   小改动疯狂发版
 
 ### TODO
 
@@ -49,7 +50,7 @@
 3. 开发完成，git 提交，npm 发版
     > 注意： 这里通过 vscode 提交工具会报错，因为这种方式很难规范提交信息，请通过命令方式提交
 
--   git 提交 `yarn run c` ，npm 发版依赖 git 提交信息，根据提交来自动生成 CHANGLOG，提交规范及其重要，更方便以后追溯信息
+-   git 提交 `yarn run c` ，npm 发版依赖 git 提交信息，根据提交来自动生成 CHANGELOG，提交规范及其重要，更方便以后追溯信息
 
     -   使用 `commitizen` 和 `cz-lerna-changelog` 来规范化本次提交，为之后的发版做好准备
 
