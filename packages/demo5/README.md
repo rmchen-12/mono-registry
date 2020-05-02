@@ -1,11 +1,11 @@
-# `@aclink/demo`
+# `@aclink/demo5`
 
 > TODO: description
 
 ## Usage
 
 ```
-const demo = require('@aclink/demo');
+const demo5 = require('@aclink/demo5');
 
 // TODO: DEMONSTRATE API
 ```

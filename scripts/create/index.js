@@ -50,12 +50,12 @@ class CreateCommand extends Command {
             yes,
         } = this.options;
 
-        // npm-package-arg handles all the edge-cases with scopes
+        // @aclink/utils => scpoe是 aclink , name是 utils
         const { name, scope } = npa(pkgName);
 
-        // optional scope is _not_ included in the directory name
         this.dirName = scope ? name.split('/').pop() : name;
         this.pkgName = name;
+        // TODO
         this.pkgsDir =
             this.project.packageParentDirs.find((pd) => pd.indexOf(pkgLocation) > -1) ||
             this.project.packageParentDirs[0];
