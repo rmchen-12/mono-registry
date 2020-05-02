@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/rmchen-12/mono-registry/compare/@aclink/demo5@2.2.0...@aclink/demo5@2.2.1) (2020-05-02)
+
+
+### Bug Fixes
+
+* changelog无效的问题 ([e97629b](https://github.com/rmchen-12/mono-registry/commit/e97629b9e80d30367850759ac10d0a3c35e80578))
+
+
+
+
+
 # [2.2.0](https://github.com/rmchen-12/mono-registry/compare/@aclink/demo5@2.1.0...@aclink/demo5@2.2.0) (2020-05-02)
 
 
