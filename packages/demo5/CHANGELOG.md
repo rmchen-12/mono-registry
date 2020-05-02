@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/rmchen-12/mono-registry/compare/@aclink/demo5@2.1.0...@aclink/demo5@2.2.0) (2020-05-02)
+
+
+### Features
+
+* 迁移lerna的cli模式 ([736e9ad](https://github.com/rmchen-12/mono-registry/commit/736e9ad9062b317dab041e22310e69726f115015))
+
+
+
+
+
 # 2.1.0 (2020-04-30)
 
 

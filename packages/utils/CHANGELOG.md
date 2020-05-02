@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/compare/@aclink/test@1.4.0...@aclink/test@1.5.0) (2020-05-02)
+
+
+### Features
+
+* 迁移lerna的cli模式 ([736e9ad](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/commits/736e9ad9062b317dab041e22310e69726f115015))
+
+
+
+
+
 # [1.4.0](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/compare/@aclink/test@1.3.1...@aclink/test@1.4.0) (2020-04-30)
 
 
