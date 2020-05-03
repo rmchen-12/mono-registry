@@ -19,10 +19,11 @@ exports.builder = (yargs) => {
         })
         .options({
             // 支持的模板类型，可选根目录下template的文件夹
-            type: {
+            t: {
                 group: 'Command Options:',
                 defaultDescription: 'utils',
                 describe: '选择的模板类型，比如工具库，组件库等',
+                alias: 'type',
                 choices: require('globby').sync('*', { cwd: 'template/', onlyDirectories: true, unique: true }),
             },
             // 跳过所有选择，用默认参数
