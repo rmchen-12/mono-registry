@@ -21,8 +21,6 @@
     "sideEffects": false,
     "license": "ISC",
     "devDependencies": {
-        "cross-env": "^7.0.2",
-        "rimraf": "3.0.2",
         "rollup-plugin-filesize": "^7.0.0"
     },
     "dependencies": {

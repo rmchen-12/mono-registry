@@ -9,6 +9,7 @@
 
 -   [x] 自定义一些模板 package，一键生成符合最佳实践的 npm 仓库，因为通过`lerna create @aclink/new` 建立的 package 仓库有点简陋
 -   [ ] 使用 jest，增加代码测试
+-   [ ] 完善仓库模板
 
 ### 多 npm 仓库用到的工具
 
@@ -36,8 +37,8 @@
 2. 开发中
 
 -   安装依赖，统一通过 yarn 的 workspace 来安装，
-    -   普通项目依赖管理： 通过 yarn add 和 yarn remove 即可简单解决依赖库的安装和删除问题
-    -   对所有的 packages 进行依赖管理，分为三种场景
+    -   普通项目依赖管理（node_modules 散落在各个项目中）： 通过 yarn add 和 yarn remove 即可简单解决依赖库的安装和删除问题
+    -   对所有的 packages 进行依赖管理（node_modules 在根目录下），分为三种场景（推荐）
         -   给某个 package 安装依赖 `yarn workspace @aclink/utils add lodash` ，给 @aclink/utils 安装 lodash
         -   给所有的 package 安装依赖 `yarn workspaces add lodash`
         -   增加内部模块之间的依赖 `lerna add @aclink/utils --scope @aclink/rcm` ，给 @aclink/rcm 添加 @aclink/utils 依赖
@@ -50,11 +51,11 @@
 3. 开发完成，git 提交，npm 发版
     > 注意： 这里通过 vscode 提交工具会报错，因为这种方式很难规范提交信息，请通过命令方式提交
 
--   git 提交 `yarn run c` ，npm 发版依赖 git 提交信息，根据提交来自动生成 CHANGELOG，提交规范及其重要，更方便以后追溯信息
+-   git 提交 `yarn run commit` ，npm 发版依赖 git 提交信息，根据提交来自动生成 CHANGELOG，提交规范及其重要，更方便以后追溯信息
 
     -   使用 `commitizen` 和 `cz-lerna-changelog` 来规范化本次提交，为之后的发版做好准备
 
--   版本发布 `lerna publish`
+-   版本发布 `yarn run publish` 执行 `lerna publish --no-commit-hooks`
 
     -   找出从上一个版本发布以来有过变更的 package
     -   提示开发者确定要发布的版本号
@@ -63,6 +64,7 @@
     -   更新 lerna.json 中的 version 字段
     -   提交上述修改，并打一个 tag
     -   推送到 git 仓库
+    -   推送到 npm 仓库
 
 ### lerna 的一些操作命令
 
