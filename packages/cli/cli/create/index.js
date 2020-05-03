@@ -28,7 +28,7 @@ class CreateCommand extends Command {
 
         // 生成的目录名称
         this.dirName = scope ? name.split('/').pop() : name;
-        // 多个workspace的话确定用的是哪个workspace
+        // 多个workspace的话确定用的是哪个workspace，顺序是字母排序
         this.pkgsDir =
             this.project.packageParentDirs.find((pd) => pd.indexOf(pkgLocation) > -1) ||
             this.project.packageParentDirs[0];

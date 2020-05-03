@@ -1,4 +1,15 @@
 'use strict';
+const globby = require('globby');
+const path = require('path');
+const findUp = require('find-up');
+
+const rootPath = findUp.sync(
+    function (directory) {
+        const hasUnicorns = findUp.sync.exists(path.join(directory, 'lerna.json'));
+        return hasUnicorns && directory;
+    },
+    { type: 'directory' },
+);
 
 /**
  * @see https://github.com/yargs/yargs/blob/master/docs/advanced.md#providing-a-command-module
@@ -14,7 +25,7 @@ exports.builder = (yargs) => {
             type: 'string',
         })
         .positional('loc', {
-            describe: '新建到哪个目录下，默认是配置中workspace的第一条',
+            describe: '新建到哪个目录下',
             type: 'string',
         })
         .options({
@@ -24,7 +35,11 @@ exports.builder = (yargs) => {
                 defaultDescription: 'utils',
                 describe: '选择的模板类型，比如工具库，组件库等',
                 alias: 'type',
-                choices: require('globby').sync('*', { cwd: 'template/', onlyDirectories: true, unique: true }),
+                choices: globby.sync('*', {
+                    cwd: path.join(rootPath, 'template'),
+                    onlyDirectories: true,
+                    unique: true,
+                }),
             },
             // 跳过所有选择，用默认参数
             y: {

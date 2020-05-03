@@ -1,13 +1,12 @@
 {
     "private": true,
     "workspaces": [
-        "packages/*",
-        "cli"
+        "packages/*"
     ],
     "scripts": {
         "commit": "git add . && git-cz",
         "publish": "lerna publish --no-commit-hooks",
-        "new": "node ./scripts/index.js new",
+        "create": "aha create",
         "lint": "eslint packages --fix --ext .ts,.tsx,.js,.jsx"
     },
     "config": {
@@ -30,6 +29,7 @@
         ]
     },
     "devDependencies": {
+        "@aclink/aha": "1.1.1",
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
         "@typescript-eslint/eslint-plugin": "^2.30.0",

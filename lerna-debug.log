@@ -1,8 +1,9 @@
 0 silly argv {
-0 silly argv   _: [ 'new' ],
-0 silly argv   type: 'utils',
-0 silly argv   '$0': 'scripts/index.js',
-0 silly argv   name: '@ac/ac'
+0 silly argv   _: [ 'create' ],
+0 silly argv   t: 'hooks',
+0 silly argv   type: 'hooks',
+0 silly argv   '$0': '/Users/mac126/Desktop/mono-registry/node_modules/.bin/aha',
+0 silly argv   name: '@aclink/demo'
 0 silly argv }
 1 notice cli vundefined
 2 verbose rootPath /Users/mac126/Desktop/mono-registry

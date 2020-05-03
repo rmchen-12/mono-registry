@@ -8,6 +8,8 @@
 yarn add -W -D @aclink/aha
 
 aha --help
+
+aha create --help
 ```
 
 ### create
