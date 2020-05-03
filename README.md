@@ -1,14 +1,14 @@
 ### 为什么要做这套脚手架
 
--   自己配了一套 rollup 来打包工具库结果引用出错，线上严重 bug
+-   自己配了一套 rollup 来打包工具库结果引用出错，造成线上 bug
 -   智能硬件组内维护了多个 package，散落四处，维护繁琐
 -   发版后到底更新了啥，还要手动改 version，version 应该改哪个数字，CHANGELOG 维护
--   小改动疯狂发版
+-   小改动还要疯狂发版
 
 ### TODO
 
+-   [x] 自定义一些模板 package，一键生成符合最佳实践的 npm 仓库，因为通过`lerna create @aclink/new` 建立的 package 仓库有点简陋
 -   [ ] 使用 jest，增加代码测试
--   [ ] 自定义一些模板 package，一键生成符合最佳实践的 npm 仓库，因为通过`lerna create @aclink/new` 建立的 package 仓库有点简陋
 
 ### 多 npm 仓库用到的工具
 

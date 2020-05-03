@@ -1,12 +1,13 @@
 {
     "private": true,
     "workspaces": [
-        "packages/*"
+        "packages/*",
+        "cli"
     ],
     "scripts": {
         "commit": "git add . && git-cz",
         "publish": "lerna publish --no-commit-hooks",
-        "new": "lerna create",
+        "new": "node ./scripts/index.js new",
         "lint": "eslint packages --fix --ext .ts,.tsx,.js,.jsx"
     },
     "config": {
@@ -41,7 +42,6 @@
         "father": "^2.29.3",
         "husky": "^4.2.5",
         "lerna": "^3.19.0",
-        "lerna-changelog": "1.0.1",
         "lint-staged": "^10.2.0",
         "prettier": "^2.0.5",
         "rimraf": "3.0.2",
