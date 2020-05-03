@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/rmchen-12/mono-registry/compare/@aclink/aha@1.1.0...@aclink/aha@1.1.1) (2020-05-03)
+
+**Note:** Version bump only for package @aclink/aha
+
+
+
+
+
 # 1.1.0 (2020-05-03)
 
 
