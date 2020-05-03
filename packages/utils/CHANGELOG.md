@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/compare/@aclink/test@1.5.1...@aclink/test@1.6.0) (2020-05-03)
+
+
+### Features
+
+* 增加模板功能 ([0dee49d](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/commits/0dee49d75a37af0daf33ec9b0edd81179757f521))
+
+
+
+
+
 ## [1.5.1](http://10.1.1.217/ruimin.chen/ehome-aclink-utils/compare/@aclink/test@1.5.0...@aclink/test@1.5.1) (2020-05-02)
 
 

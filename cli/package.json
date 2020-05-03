@@ -1,6 +1,6 @@
 {
     "name": "@aclink/create",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "基于lerna create命令，改造为支持模板来创建package",
     "keywords": [
         "lerna",
