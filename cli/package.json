@@ -1,6 +1,6 @@
 {
     "name": "@aclink/aha",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "基于lerna，构建一些自定义命令",
     "author": "rmchen-12 <rmchen1993@163.com>",
     "homepage": "https://github.com/rmchen-12/mono-registry#readme",
@@ -38,7 +38,6 @@
         "lerna": "^3.20.2"
     },
     "dependencies": {
-        "yargs": "15.3.1",
         "@lerna/child-process": "3.16.5",
         "@lerna/command": "3.18.5",
         "@lerna/npm-conf": "3.16.0",
@@ -53,6 +52,7 @@
         "slash": "^2.0.0",
         "validate-npm-package-license": "^3.0.3",
         "validate-npm-package-name": "^3.0.0",
-        "whatwg-url": "^7.0.0"
+        "whatwg-url": "^7.0.0",
+        "yargs": "15.3.1"
     }
 }
