@@ -1,6 +1,6 @@
 {
     "name": "@aclink/aha",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "基于lerna，构建一些自定义命令",
     "author": "rmchen-12 <rmchen1993@163.com>",
     "homepage": "https://github.com/rmchen-12/mono-registry#readme",
