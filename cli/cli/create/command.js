@@ -43,5 +43,5 @@ exports.builder = (yargs) => {
 };
 
 exports.handler = function handler(argv) {
-    return require('.')(argv);
+    return require('./index')(argv);
 };

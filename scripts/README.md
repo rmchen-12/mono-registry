@@ -4,7 +4,7 @@
 
 ### new
 
-> node index.js new @aclink/demo --type utils // 在 packages 下新建一个 utils 包
+> node index.js new @aclink/aha --type utils // 在 packages 下新建一个 utils 包
 
 基于 lerna 的 create 命令改造，以模板的方式新建一个 package，模板可放在根目录 `template` 文件夹下，执行命令时会自动引用，
 目前支持三种模板

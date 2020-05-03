@@ -1,38 +1,44 @@
 {
-    "name": "@aclink/create",
-    "version": "1.1.0",
-    "description": "基于lerna create命令，改造为支持模板来创建package",
+    "name": "@aclink/aha",
+    "version": "1.0.0",
+    "description": "基于lerna，构建一些自定义命令",
+    "author": "rmchen-12 <rmchen1993@163.com>",
+    "homepage": "https://github.com/rmchen-12/mono-registry#readme",
+    "license": "ISC",
     "keywords": [
         "lerna",
         "command",
         "template"
     ],
-    "homepage": "https://github.com/lerna/lerna/tree/master/commands/create#readme",
-    "license": "MIT",
-    "author": {
-        "name": "rmchen-12",
-        "url": "https://github.com/rmchen-12"
-    },
-    "bin": {
-        "crm": "index.js"
+    "main": "cli/index.js",
+    "directories": {
+        "lib": "cli",
+        "test": "__tests__"
     },
     "files": [
-        "index.js",
-        "create"
+        "cli"
     ],
-    "main": "index.js",
-    "engines": {
-        "node": ">= 6.9.0"
-    },
     "publishConfig": {
-        "access": "public"
+        "registry": "http://10.1.10.34:4873/"
     },
-    "repository": {},
-    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rmchen-12/mono-registry.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "bugs": {
+        "url": "https://github.com/rmchen-12/mono-registry/issues"
+    },
+    "bin": {
+        "aha": "bin/aha"
+    },
     "peerDependencies": {
         "lerna": "^3.20.2"
     },
     "dependencies": {
+        "yargs": "15.3.1",
         "@lerna/child-process": "3.16.5",
         "@lerna/command": "3.18.5",
         "@lerna/npm-conf": "3.16.0",
